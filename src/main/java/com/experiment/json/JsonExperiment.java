@@ -11,7 +11,8 @@ public class JsonExperiment {
         Person person = new Person("Advik", 8);
 
         // Convert to JSON
-        String jsonString = mapper.writeValueAsString(person);
+        System.out.println("Done!");
+        String jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(person);
         System.out.println(jsonString);
     }
 }
